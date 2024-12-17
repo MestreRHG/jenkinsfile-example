@@ -10,7 +10,7 @@ pipeline {
         echo "The result is ${currentBuild.result}"
         echo "The name is ${currentBuild.displayName}"
         echo "The ID is ${currentBuild.id}"
-        echo "The duration of the builld is ${currentBuild.duration}"
+        echo "The duration of the build in milliseconds is ${currentBuild.duration}"
       }
     }
   }
