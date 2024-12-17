@@ -6,6 +6,11 @@ pipeline {
       steps {
         echo 'Hello World'
         echo "Build number is ${currentBuild.number}"
+        echo "The current result is ${currentBuild.currentResult}"
+        echo "The result is ${currentBuild.result}"
+        echo "The name is ${currentBuild.displayName}"
+        echo "The ID is ${currentBuild.id}"
+        echo "The duration of the builld is ${currentBuild.duration}"
       }
     }
   }
