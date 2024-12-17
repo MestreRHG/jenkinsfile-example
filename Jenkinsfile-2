@@ -12,7 +12,7 @@ pipeline {
         echo "The duration of the build in milliseconds is ${currentBuild.duration}"
       }
       post {
-        sucess {
+        success {
           script {
             currentBuild.result = 'FAILURE'
           }
